@@ -1,0 +1,12 @@
+.button {
+    display: inline-grid;
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 15px;
+    width: 150px;
+    margin: 15px 5px;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    overflow: hidden;
+}

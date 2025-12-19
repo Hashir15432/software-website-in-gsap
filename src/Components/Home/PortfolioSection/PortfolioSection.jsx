@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import './PortfolioSection.css'
 gsap.registerPlugin(ScrollTrigger);
 
 const PortfolioSection = () => {
@@ -49,6 +49,19 @@ const PortfolioSection = () => {
             }
         });
 
+        console.clear();
+
+        const buttons = gsap.utils.toArray(".button");
+        buttons.forEach((item) => {
+            let span = item.querySelector("span");
+            let tl = gsap.timeline({ paused: true });
+
+            tl.to(span, { duration: 0.2, yPercent: -150, ease: "power2.in" });
+            tl.set(span, { yPercent: 150 });
+            tl.to(span, { duration: 0.2, yPercent: 0 });
+
+            item.addEventListener("mouseenter", () => tl.play(0));
+        });
     }, { scope: containerRef });
 
     return (
@@ -65,17 +78,23 @@ const PortfolioSection = () => {
                     <span className="inline-block mr-3">Spicaware</span>
                     <span className="inline-block mr-3">is</span>
                     <span className="inline-block mr-3">a</span>
-                    <span className="text-accent inline-block mr-3">creative</span>
-                    <span className="inline-block mr-3">agency</span>
+                    <span class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-[#59BB8C]">
+                        <span className="text-black inline-block mr-3">creative</span>
+                    </span>
+                    <span class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-[#935E2D]">
+                        <span className="text-white inline-block mr-3">agency</span>
+                    </span>
                     <span className="inline-block mr-3">that</span>
                     <span className="inline-block mr-3">transforms</span>
-                    <span className="text-accent inline-block mr-3">ideas</span>
+                    <span className="text-black inline-block mr-3">ideas</span>
                     <span className="inline-block mr-3">into</span>
                     <span className="inline-block mr-3">masterpieces.</span>
                     <br className="hidden md:block" />
                     <span className="inline-block mr-3">We</span>
                     <span className="inline-block mr-3">craft</span>
-                    <span className="text-purple-400 inline-block mr-3">design</span>
+                    <span class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-gray-400">
+                        <span className="text-black inline-block mr-3">design</span>
+                    </span>
                     <span className="inline-block mr-3">magic,</span>
                     <span className="inline-block mr-3">breathe</span>
                     <span className="inline-block mr-3">new</span>
@@ -102,8 +121,8 @@ const PortfolioSection = () => {
                         We've been working for several years to build a portfolio that truly reflects our passion for innovation and storytelling.
                     </p>
 
-                    <button className="group relative px-12 py-5 bg-accent text-white font-black rounded-full uppercase text-xs tracking-widest shadow-2xl hover:bg-dark transition-all duration-300 transform hover:scale-110 active:scale-95">
-                        <span className="relative z-10">View Portfolio</span>
+                    <button className="button group relative bg-accent text-white font-black rounded-full uppercase text-xs hover:bg-dark transition-all duration-300 transform hover:scale-30 active:scale-20">
+                        <span className=" relative">View Portfolio</span>
                         <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 blur-md transition-opacity"></div>
                     </button>
                 </div>
@@ -112,4 +131,4 @@ const PortfolioSection = () => {
     );
 };
 
-export default PortfolioSection ;
+export default PortfolioSection;

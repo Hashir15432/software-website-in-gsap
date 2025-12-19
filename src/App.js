@@ -4,6 +4,7 @@ import Navbar from "./Components/Home/Navbar/Navbar"
 import Hero from './Components/Home/Hero/Hero';
 import DigitalAgencyBanner from './Components/Home/DigitalAgencyBanner/DigitalAgencybanner';
 import DiscoverSection from './Components/Home/DiscoverSection/DiscoverSection'
+import Services from './Components/Home/Services/Services';
 import Footer from './Components/Home/Footer/Footer';
 import ContactFooter from './Components/Home/ContactFooter/ContactFooter';
 import PortfolioSection from './Components/Home/PortfolioSection/PortfolioSection';
@@ -21,6 +22,7 @@ function App() {
       <Hero />
       <DigitalAgencyBanner />
       <DiscoverSection />
+      <Services />
       <PortfolioSection />
       {renderContent}
       <ContactFooter />
