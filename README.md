@@ -1,10 +1,10 @@
-# 🎨 Spicaware — Creative Design Agency Portfolio
+# 🎨 Creative Design Agency Portfolio
 
-![Spicaware Cover](Screenshot%202025-12-23%20192218.png)
+![Quantumstack Cover](Screenshot%202025-12-23%20192218.png)
 
 > **"Transforming Ideas into Digital Masterpieces."**
 
-Spicaware is a high-end, creative agency website. Built with a focus on **bold typography**, **cinematic animations**,  **seamless user experience**, and **GSAP Animations**  it showcases the perfect blend of technical precision and creative flair. and a professional "Soft Sage & Obsidian" color palette to create an immersive browsing experience.
+QuantumStack is a high-end, creative agency website. Built with a focus on **bold typography**, **cinematic animations**,  **seamless user experience**, and **GSAP Animations**  it showcases the perfect blend of technical precision and creative flair. and a professional "Soft Sage & Obsidian" color palette to create an immersive browsing experience.
 
 ---
 
@@ -14,7 +14,7 @@ Spicaware is a high-end, creative agency website. Built with a focus on **bold t
 - **Liquid "Gooey" Buttons**: Custom SVG filter-based buttons that react.
 - **Lenis Smooth Scroll**: High-performance inertial scrolling for a premium browsing experience.
 - **Fully Responsive**: Optimized for every screen, from mobile devices to ultra-wide 4K monitors.
-- **Dynamic Project Modals**: Immersive detailed views for every portfolio item.
+- **Dynamic Project Modals**: Immersive, detailed views for every portfolio item.
 
 ---
 
@@ -29,8 +29,8 @@ Spicaware is a high-end, creative agency website. Built with a focus on **bold t
 
 ---
 
-**LAnguage:**
-- **React.js, Tailwind CSS, GSAP Animtions , CSS3**
+**Language:**
+- **React.js, Tailwind CSS, GSAP Animations, CSS3**
 
 
 ## 🚀 Getting Started
