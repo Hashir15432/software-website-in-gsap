@@ -1,4 +1,4 @@
-# 🎨 Creative Design Agency Portfolio
+# Creative Design Agency Portfolio
 
 ![Quantumstack Cover](Screenshot%202025-12-23%20192218.png)
 
