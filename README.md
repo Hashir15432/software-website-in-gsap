@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# 🎨 Spicaware — Creative Design Agency Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Spicaware Cover](Screenshot%202025-12-23%20192218.png)
 
-## Available Scripts
+> **"Transforming Ideas into Digital Masterpieces."**
 
-In the project directory, you can run:
+Spicaware is a high-end, creative agency website. Built with a focus on **bold typography**, **cinematic animations**,  **seamless user experience**, and **GSAP Animations**  it showcases the perfect blend of technical precision and creative flair. and a professional "Soft Sage & Obsidian" color palette to create an immersive browsing experience.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Advanced GSAP Animations**: Parallax effects, staggered text reveals, and clip-path image transitions.
+- **Liquid "Gooey" Buttons**: Custom SVG filter-based buttons that react.
+- **Lenis Smooth Scroll**: High-performance inertial scrolling for a premium browsing experience.
+- **Fully Responsive**: Optimized for every screen, from mobile devices to ultra-wide 4K monitors.
+- **Dynamic Project Modals**: Immersive detailed views for every portfolio item.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: [React](https://react.dev/)
+- **Animation**: [GSAP (GreenSock)](https://greensock.com/gsap/) & [ScrollTrigger](https://greensock.com/scrolltrigger/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Fonts**: Anton (Headlines) & Inter (Body)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**LAnguage:**
+- **React.js, Tailwind CSS, GSAP Animtions , CSS3**
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Follow these steps to get a local copy up and running:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 1. Clone the repository
+```bash
+git clone https://github.com/hashirwebx/software-website-in-gsap.git
+```
+ 
+### 2. Install dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```Bash
+npm install
+```
 
-## Learn More
+### 3. Run the development server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```Bash
+npm run dev
+```
