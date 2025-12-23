@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import "../../Styles/Styles.css"
 import LiquidButton from '../../Styles/LiquidButton';
+import Logo from '../../logo.png';
 const Navbar = ({ onNavigate, currentPage }) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = ({ onNavigate, currentPage }) => {
         <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
             <div className="container mx-auto px-6 flex justify-between items-center">
                 <div className="flex items-center gap-2 cursor-pointer" onClick={() => handleNav('home')}>
-                    <div className="w-8 h-8 rounded-tr-xl rounded-bl-xl bg-gradient-to-tr from-primary to-accent"></div>
+                    <img src={Logo} alt="Spicaware logo" className="h-8 w-auto object-contain" />
                     <span className="text-[26px] font-black tracking-tight text-dark">Spicaware</span>
                 </div>
 

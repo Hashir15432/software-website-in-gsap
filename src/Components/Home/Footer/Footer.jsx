@@ -1,5 +1,6 @@
 import React from 'react';
 import { Facebook, Instagram, Twitter, Linkedin, Phone, Mail, ArrowUpRight } from 'lucide-react';
+import Logo from '../../logo.png';
 
 const ContactFooter = ({ simple = false }) => {
     return (
@@ -8,7 +9,7 @@ const ContactFooter = ({ simple = false }) => {
                 <div className={`flex flex-col md:flex-row justify-between items-start gap-12 ${!simple ? 'border-t border-gray-800 pt-16' : ''}`}>
                     <div className="max-w-xs">
                         <div className="flex items-center gap-2 mb-6">
-                            <div className="w-6 h-6 rounded-tr-lg rounded-bl-lg bg-gradient-to-tr from-primary to-accent"></div>
+                            <img src={Logo} alt="Spicaware logo" className="h-6 w-auto object-contain" />
                             <span className="text-lg font-bold">Spicaware</span>
                         </div>
                         <p className="text-xs text-gray-500 mb-6">
