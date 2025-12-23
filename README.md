@@ -4,7 +4,7 @@
 
 > **"Transforming Ideas into Digital Masterpieces."**
 
-QuantumStack is a high-end, creative agency website. Built with a focus on **bold typography**, **cinematic animations**,  **seamless user experience**, and **GSAP Animations**  it showcases the perfect blend of technical precision and creative flair. and a professional "Soft Sage & Obsidian" color palette to create an immersive browsing experience.
+This Website is a high-end, creative agency website. Built with a focus on **bold typography**, **cinematic animations**,  **seamless user experience**, and **GSAP Animations**,  it showcases the perfect blend of technical precision and creative flair. and a professional "Soft Sage & Obsidian" color palette to create an immersive browsing experience.
 
 ---
 
