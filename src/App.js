@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from "./Components/Home/Navbar/Navbar";
 import Hero from './Components/Home/Hero/Hero';
 import DigitalAgencyBanner from './Components/Home/DigitalAgencyBanner/DigitalAgencybanner';
@@ -14,10 +14,58 @@ import ServiceDetail from './Components/ServicesDetail/ServicesDetail';
 import Blog from './Components/Blog/Blog';
 import Contact from './Components/Contact/Contact';
 import Portfolio from './Components/Portfolio/Portfolio';
+import Preloader from './Components/PreLoading/Preloading';
+
+
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Lenis from 'lenis';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
+const [isLoading, setIsLoading] = useState(true);
 
+  // Sync ScrollTrigger when page content changes
+  useEffect(() => {
+    if (!isLoading) {
+      const timer = setTimeout(() => {
+        ScrollTrigger.refresh();
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [currentPage, isLoading]);
+
+  useGSAP(() => {
+    if (isLoading) return;
+
+    // 1. INITIALIZE LENIS SMOOTH SCROLL
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      wheelMultiplier: 1,
+      touchMultiplier: 2,
+      infinite: false,
+    });
+
+    lenis.on('scroll', ScrollTrigger.update);
+
+    const rafExecutor = (time: number) => {
+      lenis.raf(time * 1000);
+    };
+    gsap.ticker.add(rafExecutor);
+    gsap.ticker.lagSmoothing(0);
+
+    ScrollTrigger.refresh();
+
+    return () => {
+      lenis.destroy();
+      gsap.ticker.remove(rafExecutor);
+    };
+  }, [currentPage, isLoading]);
   const renderContent = () => {
     switch (currentPage) {
       case 'about':
@@ -47,6 +95,7 @@ function App() {
 
   return (
     <div className="w-full min-h-screen relative overflow-hidden bg-customBg">
+      {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
       <Navbar onNavigate={setCurrentPage} currentPage={currentPage} />
       {renderContent()}
       <Footer />
